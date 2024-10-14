@@ -22,10 +22,7 @@ return require('packer').startup(function(use)
 		end
 	})
 
-	use({
-		'nvim-treesitter/nvim-treesitter', 
-		{run = ':TSUpdate'}
-	})
+	use({ 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}})
 
 	use({ 'ThePrimeagen/harpoon' })
 
@@ -39,6 +36,9 @@ return require('packer').startup(function(use)
 	})
 
 	use ({ 'ThePrimeagen/vim-be-good' })
+
+    use 'ray-x/go.nvim'
+    use 'ray-x/guihua.lua'
 
 	use ({ 'tpope/vim-commentary' })
 
